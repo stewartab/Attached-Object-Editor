@@ -36,11 +36,18 @@ Include in your `gamemode.pwn`:
 
 ---
 
-
 ## Installation
 1. Copy `attach_object_editor.inc` into your PAWN includes or server gamemode folder.
 2. Ensure all required libraries (y_ini, y_hooks, pawncmd, sscanf) are included.
 3. Compile your gamemode with PAWN 3.10+.
+
+or,
+
+You can clone the Attach Object Editor repository directly using Git:
+
+```bash
+git clone https://github.com/stewartab/Attached-Object-Editor.git
+```
 
 ---
 
@@ -79,13 +86,3 @@ rotZ=90.0
 ## License
 - Free to use and distribute for SA-MP servers.
 - Credit appreciated if redistributed.
-
----
-
-## Git Clone
-
-You can clone the Attach Object Editor repository directly using Git:
-
-```bash
-git clone https://github.com/stewartab/Attached-Object-Editor.git
-```
