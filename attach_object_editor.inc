@@ -23,7 +23,7 @@ public OnPlayerEditAttachedObject(playerid, EDIT_RESPONSE:response, index, model
 {
     if (response == EDIT_RESPONSE_FINAL)
     {
-        SendClientMessage(playerid, COLOR_GREEN, "Attached object edition saved.");
+        SendClientMessage(playerid, 0x00FF00AA, "Attached object edition saved.");
 
         AttachEditor[playerid][aeOffsetX] = fOffsetX;
         AttachEditor[playerid][aeOffsetY] = fOffsetY;
@@ -47,7 +47,7 @@ CMD:attacheditor(playerid, params[])
         {
             if(sscanf(params, "d", objid))
             {
-                return SendClientMessage(playerid, COLOR_RED, "Usage: /attacheditor [objectid]");
+                return SendClientMessage(playerid, 0xFF0000AA, "Usage: /attacheditor [objectid]");
             }
 
             // Create a default object
@@ -73,7 +73,7 @@ CMD:editobj(playerid, params[]){
 
     if (AttachEditor[playerid][aeObjectID] == -1)
     {
-        return SendClientMessage(playerid, COLOR_RED, "Invalid object ID.");
+        return SendClientMessage(playerid, 0xFF0000FF, "Invalid object ID.");
     }
 
     EditAttachedObject(playerid, 0); // Already active, just show menu
