@@ -20,9 +20,9 @@ Allows admins or developers to **spawn objects, attach them to players, adjust o
 
 ## Required Libraries
 
-- **[YSI Includes](https://github.com/IllidanS4/YSI-Includes)**: `y_ini`, `y_hooks`  
-- **PawnCMD**: For handling commands (optional if using dialog only)  
-- **sscanf**: For parsing user input  
+- **[YSI Includes](https://github.com/IllidanS4/YSI-Includes)**: `y_ini`
+- **[PawnCMD](https://github.com/katursis/Pawn.CMD)**: For handling commands (optional if using dialog only) | ([y_commands](https://github.com/pawn-lang/YSI-Includes/tree/5.x/YSI_Visual/y_commands) or [zcmd](https://github.com/Southclaws/zcmd) can be used)
+- **[sscanf](https://github.com/Y-Less/sscanf)**: For parsing user input  
 
 Include in your `gamemode.pwn`:
 
@@ -31,7 +31,7 @@ Include in your `gamemode.pwn`:
 #include <y_hooks>
 #include <pawncmd>
 #include <sscanf>
-#include "attach_editor"
+#include "attach_object_editor.inc" // use '#include <attach_object_editor> if it's in include folder
 ```
 
 ---
@@ -76,15 +76,16 @@ rotZ=90.0
 
 ---
 
-## Requirements
-- SA-MP 0.3.7+ server
-- PAWN 3.10+ compiler
-- YSI Includes: y_ini, y_hooks
-- PawnCMD: For command support (`y_commands` or `zcmd` can be used)
-- sscanf: For parsing input
-
----
-
 ## License
 - Free to use and distribute for SA-MP servers.
 - Credit appreciated if redistributed.
+
+---
+
+## Git Clone
+
+You can clone the Attach Object Editor repository directly using Git:
+
+```bash
+git clone https://github.com/stewartab/Attached-Object-Editor.git
+```
