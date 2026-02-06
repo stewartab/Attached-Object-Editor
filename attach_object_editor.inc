@@ -1,3 +1,5 @@
+#include <Pawn.CMD>
+#include <sscanf2>
 #include <YSI_Coding\y_hooks>
 #include <YSI_Storage\y_ini>
 
