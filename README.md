@@ -27,10 +27,10 @@ Allows admins or developers to **spawn objects, attach them to players, adjust o
 Include in your `gamemode.pwn`:
 
 ```pawn
-#include <y_ini>
-#include <y_hooks>
-#include <pawncmd>
-#include <sscanf>
+#include <YSI_Storage\y_ini>
+#include <YSI_Coding\y_hooks>
+#include <Pawn.CMD>
+#include <sscanf2>
 #include "attach_object_editor.inc" // use '#include <attach_object_editor> if it's in include folder
 ```
 
