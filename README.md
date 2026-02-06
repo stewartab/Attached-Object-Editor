@@ -1,7 +1,7 @@
 # Attach Object Editor for SA-MP (YSI-Based)
 
-A **dialog-based attach object editor** for SA-MP servers.  
-Allows admins or developers to **spawn objects, attach them to players, adjust offsets and rotation, remove objects, and save/load them to INI files** — all without typing commands. Built entirely using **PAWN + YSI includes**.
+An **attach object editor** for SA-MP servers.  
+Allows users to **spawn objects, attach them to players, adjust offsets and rotation, remove objects, and save/load them to INI files**. Built entirely using **PAWN + YSI includes**.
 
 ---
 
@@ -12,9 +12,7 @@ Allows admins or developers to **spawn objects, attach them to players, adjust o
 - Attach multiple objects to different players simultaneously.  
 - Remove attached objects with a single click.  
 - Save attachments to **INI files**, automatically creating the file if it doesn’t exist.  
-- Load attachments from INI files and automatically attach them to the player.  
-- Fully compatible with **YSI `y_ini`**, **PAWN CMD**, and **sscanf**.  
-- Works in **real-time** without restarting the server.
+- Load attachments from INI files and automatically attach them to the player.
 
 ---
 
